@@ -1,107 +1,57 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Datenschutz | intavio</title>
-  <meta
-    name="description"
-    content="Datenschutzhinweise für die Intervall-Timer-App intavio."
-  >
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy — intavio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="intavio Startseite">
-        <span class="brand-mark">i</span>
-        <span>intavio</span>
-      </a>
-      <details class="site-menu">
-        <summary class="menu-toggle" aria-label="Menü öffnen">
-          <span></span>
-          <span></span>
-          <span></span>
-        </summary>
-        <nav class="site-nav" aria-label="Hauptnavigation">
-          <a href="/">Home</a>
-          <a href="/support.html">Support</a>
-          <a href="/privacy.html" aria-current="page">Datenschutz</a>
-          <a href="/imprint.html">Impressum</a>
-        </nav>
-      </details>
-    </header>
+<body class="subpage">
+    <nav class="navbar">
+        <a href="/" class="brand">
+            <img src="logo_transparent.png" alt="intavio logo">
+            <span>intavio</span>
+        </a>
 
-    <main class="content-page">
-      <section class="content-hero">
-        <p class="eyebrow">Datenschutz</p>
-        <h1>Datenschutzhinweise für intavio</h1>
-        <p>
-          Diese Seite beschreibt in knapper Form, welche Daten im Zusammenhang
-          mit der App und dieser Website verarbeitet werden.
-        </p>
-      </section>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-      <section class="legal-copy">
-        <h2>1. Verantwortliche Stelle</h2>
-        <p>
-          Bitte ergänze hier deinen Namen bzw. dein Unternehmen sowie eine
-          ladungsfähige Kontaktadresse.
-        </p>
+        <ul class="nav-links" id="site-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html" class="active">Privacy</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+        </ul>
+    </nav>
 
-        <h2>2. Datenverarbeitung in der App</h2>
-        <p>
-          intavio ist als einfache Intervall-Timer-App konzipiert. Wenn die App
-          keine Konten, kein Tracking und keine Cloud-Synchronisierung verwendet,
-          werden personenbezogene Daten in der Regel nicht oder nur sehr begrenzt
-          verarbeitet.
-        </p>
-
-        <h2>3. Website und Hosting</h2>
-        <p>
-          Diese Website wird über GitHub Pages bereitgestellt. Beim Aufruf der
-          Seiten können technisch notwendige Verbindungsdaten verarbeitet werden,
-          etwa IP-Adresse, Zeitpunkt des Zugriffs sowie Browser- und Geräteinfos.
-        </p>
-
-        <h2>4. Kontaktaufnahme</h2>
-        <p>
-          Wenn du per E-Mail Kontakt aufnimmst, werden die von dir übermittelten
-          Angaben ausschließlich zur Bearbeitung deiner Anfrage verwendet.
-        </p>
-
-        <h2>5. Deine Rechte</h2>
-        <p>
-          Dir können je nach anwendbarem Recht Auskunfts-, Berichtigungs-,
-          Löschungs- und Widerspruchsrechte zustehen. Ergänze hier die für dich
-          passenden rechtlichen Informationen.
-        </p>
-
-        <h2>6. Hinweis</h2>
-        <p>
-          Diese Datenschutzerklärung ist eine technische Vorlage und ersetzt
-          keine rechtliche Prüfung. Vor Veröffentlichung solltest du die Inhalte
-          mit deinen tatsächlichen App-Funktionen und deiner rechtlichen Lage
-          abgleichen.
-        </p>
-      </section>
+    <main class="content">
+        <h1>Privacy Policy</h1>
+        <p>We take your privacy seriously. For intavio, the following principles apply:</p>
+        <ul>
+            <li>No collection of personal data.</li>
+            <li>All timer-related data is stored locally on your device.</li>
+            <li>No analytics tools or third-party tracking.</li>
+        </ul>
+        <div class="info-block">
+            <h2>Website</h2>
+            <p>
+                This website is provided as a simple information page for intavio.
+                When you visit it, technically necessary connection data may be processed
+                by the hosting provider.
+            </p>
+        </div>
+        <div class="info-block">
+            <h2>Contact</h2>
+            <p>
+                If you contact us by email, we only use your message
+                to respond to your request and provide support.
+            </p>
+        </div>
     </main>
-
-    <footer class="site-footer">
-      <p>© 2026 intavio</p>
-      <div>
-        <a href="/">Home</a>
-        <a href="/support.html">Support</a>
-        <a href="/imprint.html">Impressum</a>
-      </div>
-    </footer>
-  </div>
+    <script src="site.js"></script>
 </body>
 </html>

@@ -1,83 +1,53 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support | intavio</title>
-  <meta
-    name="description"
-    content="Support-Seite für intavio mit Kontaktmöglichkeit und kurzen Hilfestellungen."
-  >
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support — intavio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="intavio Startseite">
-        <span class="brand-mark">i</span>
-        <span>intavio</span>
-      </a>
-      <details class="site-menu">
-        <summary class="menu-toggle" aria-label="Menü öffnen">
-          <span></span>
-          <span></span>
-          <span></span>
-        </summary>
-        <nav class="site-nav" aria-label="Hauptnavigation">
-          <a href="/">Home</a>
-          <a href="/support.html" aria-current="page">Support</a>
-          <a href="/privacy.html">Datenschutz</a>
-          <a href="/imprint.html">Impressum</a>
-        </nav>
-      </details>
-    </header>
+<body class="subpage">
+    <nav class="navbar">
+        <a href="/" class="brand">
+            <img src="logo_transparent.png" alt="intavio logo">
+            <span>intavio</span>
+        </a>
 
-    <main class="content-page">
-      <section class="content-hero">
-        <p class="eyebrow">Support</p>
-        <h1>Hilfe zu intavio</h1>
-        <p>
-          Wenn etwas nicht funktioniert, du Feedback teilen willst oder eine Frage
-          zur App hast, melde dich direkt per E-Mail.
-        </p>
-        <a class="button button-primary" href="mailto:support@intavio.app">support@intavio.app</a>
-      </section>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-      <section class="content-grid">
-        <article class="content-card">
-          <h2>Typische Anliegen</h2>
-          <ul>
-            <li>Probleme beim Starten oder Zurücksetzen eines Timers</li>
-            <li>Fragen zu Intervallen, Signalen oder App-Verhalten</li>
-            <li>Feedback, Wünsche oder Verbesserungsvorschläge</li>
-          </ul>
-        </article>
-        <article class="content-card">
-          <h2>Für eine schnelle Antwort</h2>
-          <ul>
-            <li>Gerätemodell und Betriebssystem nennen</li>
-            <li>Kurz beschreiben, was passiert ist</li>
-            <li>Wenn möglich, Schritte zum Reproduzieren mitschicken</li>
-          </ul>
-        </article>
-      </section>
+        <ul class="nav-links" id="site-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="support.html" class="active">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+        </ul>
+    </nav>
+
+    <main class="content">
+        <h1>Support</h1>
+        <p>Have a question about intavio or run into an issue? We are happy to help.</p>
+        <p>Just send us an email at:</p>
+        <a href="mailto:support@intavio.app" class="cta-button">support@intavio.app</a>
+        <div class="info-block">
+            <h2>What we can help with</h2>
+            <p>
+                This includes timer issues, general app questions, feature feedback,
+                or anything that is not working as expected on your device.
+            </p>
+        </div>
+        <div class="info-block">
+            <h2>For a faster reply</h2>
+            <p>
+                It helps if you include your device model, iOS version,
+                and a short description of what happened and how to reproduce it.
+            </p>
+        </div>
     </main>
-
-    <footer class="site-footer">
-      <p>© 2026 intavio</p>
-      <div>
-        <a href="/">Home</a>
-        <a href="/privacy.html">Datenschutz</a>
-        <a href="/imprint.html">Impressum</a>
-      </div>
-    </footer>
-  </div>
+    <script src="site.js"></script>
 </body>
 </html>

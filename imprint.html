@@ -1,91 +1,52 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Impressum | intavio</title>
-  <meta
-    name="description"
-    content="Impressum der Website und App intavio."
-  >
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprint — intavio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
-<body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="intavio Startseite">
-        <span class="brand-mark">i</span>
-        <span>intavio</span>
-      </a>
-      <details class="site-menu">
-        <summary class="menu-toggle" aria-label="Menü öffnen">
-          <span></span>
-          <span></span>
-          <span></span>
-        </summary>
-        <nav class="site-nav" aria-label="Hauptnavigation">
-          <a href="/">Home</a>
-          <a href="/support.html">Support</a>
-          <a href="/privacy.html">Datenschutz</a>
-          <a href="/imprint.html" aria-current="page">Impressum</a>
-        </nav>
-      </details>
-    </header>
+<body class="subpage">
+    <nav class="navbar">
+        <a href="/" class="brand">
+            <img src="logo_transparent.png" alt="intavio logo">
+            <span>intavio</span>
+        </a>
 
-    <main class="content-page">
-      <section class="content-hero">
-        <p class="eyebrow">Impressum</p>
-        <h1>Rechtliche Angaben</h1>
-        <p>
-          Ersetze die folgenden Platzhalter durch deine tatsächlichen
-          Anbieterinformationen, bevor du die Seite veröffentlichst.
-        </p>
-      </section>
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
 
-      <section class="legal-copy">
-        <h2>Angaben gemäß § 5 TMG</h2>
-        <p>
-          Vorname Nachname<br>
-          Straßenname 1<br>
-          PLZ Ort<br>
-          Deutschland
-        </p>
+        <ul class="nav-links" id="site-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="imprint.html" class="active">Imprint</a></li>
+        </ul>
+    </nav>
 
-        <h2>Kontakt</h2>
+    <main class="content">
+        <h1>Imprint</h1>
+        <p>Information according to Section 5 TMG:</p>
         <p>
-          E-Mail: support@intavio.app
+            [Your Name]<br>
+            [Your Street Address]<br>
+            [Postal Code & City]
         </p>
-
-        <h2>Verantwortlich für den Inhalt</h2>
-        <p>
-          Vorname Nachname<br>
-          Anschrift wie oben
-        </p>
-
-        <h2>Hinweis</h2>
-        <p>
-          Diese Seite ist eine technische Vorlage und keine Rechtsberatung.
-          Prüfe vor der Veröffentlichung, welche Angaben für dich tatsächlich
-          erforderlich sind.
-        </p>
-      </section>
+        <p><strong>Contact:</strong><br>
+        Email: support@intavio.app</p>
+        <div class="info-block">
+            <h2>Note</h2>
+            <p>
+                Replace these placeholders with your actual details before publishing.
+                If intavio is publicly available, your imprint and privacy text should match
+                your real legal and business situation.
+            </p>
+        </div>
     </main>
-
-    <footer class="site-footer">
-      <p>© 2026 intavio</p>
-      <div>
-        <a href="/">Home</a>
-        <a href="/support.html">Support</a>
-        <a href="/privacy.html">Datenschutz</a>
-      </div>
-    </footer>
-  </div>
+    <script src="site.js"></script>
 </body>
 </html>

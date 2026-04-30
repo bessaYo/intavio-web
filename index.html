@@ -1,132 +1,79 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>intavio | Intervall Timer App</title>
-  <meta
-    name="description"
-    content="intavio ist eine einfache Intervall-Timer-App für fokussierte Workouts, Trainingseinheiten und klare Routinen."
-  >
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Instrument+Serif:ital@0;1&display=swap"
-    rel="stylesheet"
-  >
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>intavio — Minimalist Interval Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="site-header">
-      <a class="brand" href="/" aria-label="intavio Startseite">
-        <span class="brand-mark">i</span>
-        <span>intavio</span>
-      </a>
-      <details class="site-menu">
-        <summary class="menu-toggle" aria-label="Menü öffnen">
-          <span></span>
-          <span></span>
-          <span></span>
-        </summary>
-        <nav class="site-nav" aria-label="Hauptnavigation">
-          <a href="/" aria-current="page">Home</a>
-          <a href="/support.html">Support</a>
-          <a href="/privacy.html">Datenschutz</a>
-          <a href="/imprint.html">Impressum</a>
-        </nav>
-      </details>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Intervall Timer App</p>
-          <h1>Klare Intervalle. Weniger Ablenkung. Mehr Fokus im Training.</h1>
-          <p class="hero-text">
-            intavio ist für Menschen gebaut, die einfach starten wollen:
-            Intervall festlegen, Timer laufen lassen, konzentriert bleiben.
-          </p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="/support.html">Support öffnen</a>
-            <a class="button button-secondary" href="/privacy.html">Datenschutz lesen</a>
-          </div>
+    <nav class="navbar">
+        <a href="/" class="brand">
+            <img src="logo_transparent.png" alt="intavio logo">
+            <span>intavio</span>
+        </a>
+        
+        <button class="menu-toggle" id="mobile-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </button>
+
+        <ul class="nav-links" id="site-nav">
+            <li><a href="/" class="active">Home</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="imprint.html">Imprint</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <h1>intavio</h1>
+        <p>The interval timer that stays out of your way. Focus on your training, not your screen.</p>
+    </section>
+
+    <section class="content home-content">
+        <p>
+            intavio is built for simple intervals: start, let it run, keep moving.
+            No cluttered interface, no distractions, and no unnecessary setup before a session.
+        </p>
+        <p>
+            Whether you use it for workouts, mobility, stretching, breathing exercises,
+            or focused work blocks, intavio helps you keep a clear rhythm and stay on task.
+        </p>
+        <div class="info-block">
+            <h2>Who is intavio for?</h2>
+            <p>
+                It is designed for anyone who wants a minimalist interval timer that starts quickly
+                and does not compete for attention once the session begins.
+            </p>
         </div>
-
-        <div class="hero-card" aria-label="App Vorschau">
-          <div class="timer-card">
-            <div class="timer-top">
-              <span>Session 04</span>
-              <span>Focus</span>
-            </div>
-            <div class="timer-display">00:45</div>
-            <div class="timer-phase">Aktives Intervall</div>
-            <div class="timer-bars" aria-hidden="true">
-              <span></span>
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-          </div>
+        <div class="info-block">
+            <h2>Built for real sessions</h2>
+            <p>
+                Use intavio for HIIT, strength training, stretching, recovery routines,
+                breathwork, meditation, or any structure that depends on clear timing.
+            </p>
         </div>
-      </section>
-
-      <section class="section-grid">
-        <article class="info-card">
-          <h2>Schnell eingerichtet</h2>
-          <p>
-            Kein unnötiger Overhead. intavio konzentriert sich auf das,
-            was eine gute Timer-App leisten muss: saubere Intervalle und
-            klare Bedienung.
-          </p>
-        </article>
-        <article class="info-card">
-          <h2>Für Training und Routinen</h2>
-          <p>
-            Egal ob Workout, Mobility, Atemübungen oder Fokusblöcke:
-            intavio hilft dabei, Sessions strukturiert durchzuziehen.
-          </p>
-        </article>
-        <article class="info-card">
-          <h2>Direkter Support</h2>
-          <p>
-            Fragen, Feedback oder Probleme erreichst du über die Support-Seite.
-            Dort findest du auch den direkten Kontakt.
-          </p>
-        </article>
-      </section>
-
-      <section class="feature-panel">
-        <div>
-          <p class="eyebrow">Warum intavio</p>
-          <h2>Gebaut für einen einfachen Ablauf statt unnötiger Komplexität.</h2>
+        <div class="info-block">
+            <h2>What matters</h2>
+            <p>
+                Clear intervals, fast interaction, and a calm interface.
+                intavio is designed to support the session instead of interrupting it.
+            </p>
         </div>
-        <div class="feature-list">
-          <div>
-            <strong>Einfach starten</strong>
-            <p>Timer setzen, Session starten, Fokus halten.</p>
-          </div>
-          <div>
-            <strong>Klare Signale</strong>
-            <p>Deutliche Phasenwechsel zwischen Aktivität und Pause.</p>
-          </div>
-          <div>
-            <strong>Reduziertes Design</strong>
-            <p>Weniger Reibung, damit die App im Hintergrund arbeitet.</p>
-          </div>
+        <div class="info-block">
+            <h2>Need help or have feedback?</h2>
+            <p>
+                If you run into an issue or want to share an idea,
+                visit the support page and get in touch.
+            </p>
+            <a href="support.html" class="cta-button">Open Support</a>
         </div>
-      </section>
-    </main>
+    </section>
 
-    <footer class="site-footer">
-      <p>© 2026 intavio</p>
-      <div>
-        <a href="/support.html">Support</a>
-        <a href="/privacy.html">Datenschutz</a>
-        <a href="/imprint.html">Impressum</a>
-      </div>
-    </footer>
-  </div>
+    <script src="site.js"></script>
 </body>
 </html>
