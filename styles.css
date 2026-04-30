@@ -201,6 +201,7 @@ p {
 
     .hero {
         height: auto;
+        margin-top: 80px;
         padding: 130px 20px 28px 20px;
     }
 
